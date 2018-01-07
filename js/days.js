@@ -5,7 +5,7 @@ function getdays(dayofupd) {
     var now = new Date().getTime();
     var updday = new Date(year,month,day).getTime();
     var diff = Math.floor((now-updday)/(1000*3600*24));
-    var ten = parseInt((diff.toString()).slice(-2),10);
+    var ten = parseInt((diff+'').slice(-2),10);
     var result = undefined;
     switch (diff) {
         case 0: return result = 'сёння';
@@ -15,11 +15,12 @@ function getdays(dayofupd) {
             function noun (ten) {
                 if (parseInt((ten+'').slice(-1),10)===1) {return diff +' дзень'}
                 else if (parseInt((ten+'').slice(-2,-1),10)>1 &&
-                (parseInt((ten+'').slice(-1),10)<5)) {return diff +' дні'}
+                parseInt((ten+'').slice(-1),10)>1 &&
+                parseInt((ten+'').slice(-1),10)<5) {return diff +' дні'}
                 else {return diff+' дзён'}
             }
             result = noun(ten) + ' таму.';
-            if (diff>31) {result = result+' Пакуль нічога не пішу.'}
+            if (diff>31) {result = result+' Даўно нічога не пісаў.'}
         }
     }
     return result;
