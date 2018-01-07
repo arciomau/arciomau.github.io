@@ -8,9 +8,9 @@ function getdays(dayofupd) {
     var ten = parseInt((diff+'').slice(-2),10);
     var result = undefined;
     switch (diff) {
-        case 0: return result = 'сёння';
-        case 1: return result = 'учора';
-        case 2: return result = 'заўчора';
+        case 0: return result = 'сёння.';
+        case 1: return result = 'учора.';
+        case 2: return result = 'заўчора.';
         default: {
             function noun (ten) {
                 if (parseInt((ten+'').slice(-1),10)===1) {return diff +' дзень'}
@@ -27,5 +27,5 @@ function getdays(dayofupd) {
 }
 
 function writediff(day,month,year) {
-    document.getElementById("update").innerHTML = getdays(day,month,year);
+    document.getElementById("updatetime").innerHTML = getdays(day,month,year);
 }
