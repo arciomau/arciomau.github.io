@@ -46,12 +46,12 @@
         <div class="header">
             <h1>Публікацыі</h1>
         </div>
-        <div class="content">
+        <div class="content"><script src="js/coll.js"></script>
 		Спіс маіх публікацый (безумоўна, няпоўны - не надта пільна сачу).
-		<h4>Кнігі</h4><ul>
+		<h4 onclick="collapser('col1');">Кнігі</h4><ul id="col1">
 		<li><a href="http://knihi.by/knihi/arciomau-alaksiej-skroz-kilamietry">А. Арцёмаў. Скрозь кіламетры</a>. Вершы і пераклады. — Мінск: Кнігазбор, 2016. — 66 с.</li>
 		</ul>
-		<h4>Калектыўныя зборнікі, перакладныя кнігі</h4><ul>
+		<h4 onclick="collapser('col2');">Калектыўныя зборнікі, перакладныя кнігі</h4><ul id="col2">
 		<li><a href="https://www.mininform.gov.by/ru/news-ru/view/konkurs-maladyx-autarau-pershatsvet-2017-1321/">Першацвет</a>: проза і паэзія маладых (вып. 2) — Мінск : Мастацкая літаратура, 2018.— 183 с.</li>
 		<li><a href="http://mastlit.by/books/moj-dzen-pachynaecca/">Мой дзень пачынаецца</a>: проза і паэзія маладых. — Мінск : Мастацкая літаратура, 2015.— 367 с. (вершы)</li>
 		<li><a href="http://pen-centre.by/doc/books/Azernaja_shkola.pdf">Азёрная школа паэзіі</a>: творы фіналістаў конкурса імя Максіма Танка. - Мінск: Логвінаў, 2014. (вершы)</li>
@@ -60,7 +60,7 @@
 		<li><a href="http://pen-centre.by/doc/books/geniush_loci.pdf">Geniush loci</a>: творы фіналістаў конкурса да стагоддзя Ларысы Геніюш. - Мінск: Логвінаў, 2012. - 160 с. (вершы, пераклады паэзіі)</li>
         <li><a href="http://knihi.com/Edhar_Po/Maska_cyrvonaje_smierci.html#1">Маска чырвонае смерці</a>: Эдгар По, апавяданні, вершы, эсэ. -  Мінск : Кнігазбор, 2011.– 472 с. (верш "Гімн")</li>
 		</ul>
-		<h4>Перыёдыка</h4><ul>
+		<h4 onclick="collapser('col3');">Перыёдыка</h4><ul id="col3">
 		<li><a href="http://zviazda.by/sites/default/files/8-2018.pdf">Літаратура і мастацтва, №8 (4963)</a>, 2018 (вершы)</li>
 		<li><a href="http://kamunikat.org/download.php?item=45873-1.pdf">Маладосць, №10 (767)</a>, 2017 (вершы)</li>
 		<li><a href="http://www.e-krama.com/Pages/almanachi.aspx">Альманах "Беларус"</a>, Нью-Ёрк, 2017 (пераклады амерыканскай паэзіі)</li>
@@ -79,7 +79,7 @@
 		<li><a href="http://kamunikat.org/download.php?item=17458-1.pdf">Верасень, №3</a>, 2010 (вершы)</li>
 		<li><a href="http://kamunikat.org/download.php?item=12955-1.pdf">Дзеяслоў, №41</a>, 2009 (пераклады паэзіі)</li>
 		</ul>
-		<h4>Інтэрв'ю, меркаванні</h4><ul>
+		<h4 onclick="collapser('col4');">Інтэрв'ю, меркаванні</h4><ul id="col4">
 		<li><a href="http://www.lit-bel.org/by/news/2017/njezaljezhny-troxmjerny-kaxany.html">Сем выказванняў пра "Дзеяслоў"</a></li>
 		<li><a href="http://www.main.lim.by/wp-content/uploads/2016/06/21-2016.pdf">Літаратура і мастацтва, №21 (4872)</a>, 2016 (пра беларускую літаратуру ў свеце)</li>
 		<li><a href="http://naviny.by/rubrics/culture/2012/09/19/ic_articles_117_179267/">Культпошук: Аляксей Арцёмаў</a> (інтэрв'ю)</li>
@@ -88,7 +88,7 @@
 		<li><a href="http://www.lim.by/limbyfiles/lim/lim28-2010.pdf">Літаратура і мастацтва, №28 (4572)</a>, 2010 (інтэрв'ю)</li>
 		<li><a href="http://rv-blr.com/literature/show/6489">Галоўны прынцып - быць вусцішна беспрынцыповым</a> (інтэрв'ю)</li>
 		</ul>
-		<h4>Крытыка, літаратуразнаўства</h4><ul>
+		<h4 onclick="collapser('col5');">Крытыка, літаратуразнаўства</h4><ul id="col5">
 		<li><a href="public/verasien17.jpg">Барометр стану маладой літаратуры</a> — Эдуард Дубянецкі, Верасень, №17, 2017</li>
 		<li><a href="public/trafimczyk.pdf">Унук Багдановіча?..</a> — Анатоль Трафімчык, Верасень, №16, 2017</li>
 		<li><a href="http://zviazda.by/sites/default/files/lim20.pdf">Выбар на вясну</a> — Алеся Лапіцкая, Літаратура і мастацтва, №20 (4923), 2017</li>
@@ -99,7 +99,7 @@
 		<li><a href="http://novychas.by/kultura/bielarus_tezaurus_stracanaha/">"Беларус": тэзаўрус страчанага</a>: Г. Кісліцына, Новы час / Беларус, 2012</li>
 		<li><a href="http://www.lim.by/limbyfiles/pol2_2011.pdf">Эстэтычны ідэал маладой беларускай паэзіі</a>: М. Шамякіна. Полымя, №2 (976), 2011</li>
 		</ul>
-		<h4>Іншае</h4><ul>
+		<h4 onclick="collapser('col6');">Іншае</h4><ul id="col6">
 		<li><a href="http://prajdzisvet.org/translators/56-artsiomau-aliaksiej.html">Старонка на сайце часопіса "ПрайдзіСвет"</a></li>
 		<li><a href="http://www.litrazh.org/name/alyaksey-arcyomau">Старонка на сайце часопіса "ЛітРАЖ"</a></li>
 		</ul>

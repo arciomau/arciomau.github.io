@@ -192,3 +192,10 @@ body {
 #layout.active .menu-link {
     left: 160px
 }
+
+.hid {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+}
